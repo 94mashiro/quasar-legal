@@ -1,6 +1,6 @@
 # quasar-legal
 
-Public privacy policy and support pages for Quasar, the Emby, Jellyfin and Feiniu client.
+Public privacy policy and support pages for the Quasar iOS and iPadOS client, an Emby, Jellyfin and Feiniu player. The Android app is distributed separately and needs its own policy page.
 
 - Privacy policy: https://94mashiro.github.io/quasar-legal/privacy.html
 - Support: https://94mashiro.github.io/quasar-legal/support.html

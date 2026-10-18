@@ -11,36 +11,32 @@
 <header>
 <p class="kicker">Quasar</p>
 <h1>Privacy Policy</h1>
-<p class="meta">Effective October 18, 2026. Version 1.0.</p>
+<p class="meta">For iOS and iPadOS. Effective October 18, 2026. Version 1.1.</p>
 <nav><a href="#en">English</a><a href="#zh" lang="zh-CN">简体中文</a><a href="support.html">Support</a></nav>
 </header>
 
 <section id="en" lang="en">
-<p>Quasar is a client for personal media servers. It works with Emby, Jellyfin and Feiniu (飞牛影视) servers that you run yourself or have an account on. Quasar is published by an individual developer. This page explains what the app does with your information.</p>
-<p>This policy applies to the Quasar app for iOS, iPadOS and Android. Quasar has no account system and no developer-operated content service. We do not receive your media server password. We do not run analytics or advertising.</p>
+<p>Quasar is a client for personal media servers. It works with Emby, Jellyfin and Feiniu (飞牛影视) servers that you run yourself or have an account on.</p>
+<p>This policy covers the Quasar app for iOS and iPadOS. The Android app is distributed separately and has additional features.</p>
+<p>Quasar has no account system and no developer-operated content service. We do not receive your media server password. We do not run analytics or advertising.</p>
 
 <h2>Information kept on your device</h2>
 <ul>
-<li>Media server address, username and password. Quasar stores them in the iOS Keychain or Android Keystore-backed storage. It sends them only to the server address you entered.</li>
+<li>Media server address, username and password. Quasar stores them in the iOS Keychain. It sends them only to the server address you entered.</li>
 <li>A random device ID. Quasar creates it on first launch and sends it to your media server so the server can recognize this client. It is not an advertising identifier and is not shared with us.</li>
-<li>Trakt sign-in tokens and profile name, if you connect Trakt.</li>
-<li>MDBList API key, if you enter one.</li>
 <li>Settings, watch progress, library metadata, artwork and playback cache.</li>
 </ul>
-<p>On iOS, Keychain items can remain after you delete the app. Remove servers in Settings before deleting the app if you want them gone.</p>
+<p>On iOS, Keychain items can remain after you delete the app. Delete the app to remove local data. Keychain items may outlive it as described.</p>
 
 <h2>Information sent over the network</h2>
 <p>Quasar sends requests directly from your device. We do not proxy them.</p>
 <ul>
 <li>Your media server. Requests include your credentials, device ID, library queries, playback progress and watch state. The person or company that operates the server handles that data under their own privacy policy.</li>
-<li>TMDB (themoviedb.org). Title searches and metadata requests. TMDB receives your IP address. Quasar uses a shared API credential, so you do not need a TMDB account.</li>
-<li>Trakt (trakt.tv), only if you connect it. Watch history, ratings, watchlist and your Trakt profile name.</li>
-<li>Douban (douban.com), when Douban ratings or comments are enabled. Title search terms and public comments. Douban receives your IP address.</li>
-<li>MDBList (mdblist.com), only if you add your own API key. Title identifiers and that key.</li>
-<li>TheIntroDB (theintrodb.org). Title identifiers and season or episode numbers, used for intro and credits markers.</li>
-<li>Image hosts. Poster and artwork requests go to TMDB or to your media server.</li>
-<li>Any other server address you add yourself, including danmaku (bullet comment) sources. Requests go to the address you entered.</li>
-<li>Android trial builds only. At launch, the app contacts public time services to verify the trial period. Those requests contain your IP address and no other personal data.</li>
+<li>TMDB (themoviedb.org). Title searches and metadata. TMDB receives your IP address. Quasar uses a shared API credential, so you do not need a TMDB account.</li>
+<li>Trakt (trakt.tv). Public trending lists, air times, ratings and artwork for the Discover, Calendar and detail screens. Trakt receives your IP address. This version of the iOS app does not sign in to Trakt and does not send your watch history to Trakt.</li>
+<li>TheIntroDB (theintrodb.org). Title identifiers, season or episode numbers and the media duration, used for intro and credits markers.</li>
+<li>Image hosts. Poster and artwork requests go to TMDB, Trakt's image service or your media server.</li>
+<li>Any other server address you add yourself. Requests go to the address you entered.</li>
 </ul>
 
 <h2>What we do not do</h2>
@@ -53,17 +49,14 @@
 </ul>
 
 <h2>Security</h2>
-<p>The operating system encrypts stored credentials. Quasar uses HTTPS when a server supports it. If you enter an http:// address, traffic to that server is not encrypted. The iOS app allows cleartext connections because many home servers do not have a certificate, and the app contacts only the address you enter. iOS asks for local network access only to reach a server on your local network.</p>
+<p>The iOS Keychain encrypts stored credentials. Quasar uses HTTPS when a server supports it. If you enter an http:// address, traffic to that server is not encrypted. The app allows cleartext connections because many home servers do not have a certificate. iOS asks for local network access only to reach a server on your local network.</p>
 
 <h2>Your choices</h2>
 <ul>
-<li>Remove a server in Settings to delete its credentials and cached data.</li>
-<li>Disconnect Trakt to delete its tokens from the device.</li>
-<li>Clear the MDBList key in Settings.</li>
-<li>Clear cached images and metadata in Settings.</li>
-<li>Delete the app to remove local data. On iOS, Keychain items can outlive the app as described above.</li>
+<li>Delete the app to remove local data from the device. On iOS, Keychain items can remain as described above.</li>
+<li>This version of the iOS app does not include a screen for removing a server or clearing the cache separately.</li>
 </ul>
-<p>For data held by TMDB, Trakt, Douban, MDBList or TheIntroDB, contact that service. For anything else, email us.</p>
+<p>For data held by TMDB, Trakt or TheIntroDB, contact that service. For anything else, email us.</p>
 
 <h2>Children</h2>
 <p>Quasar is not directed to children under 13. Do not use the app if you are under 13.</p>
@@ -79,32 +72,28 @@
 
 <section id="zh" lang="zh-CN">
 <h1>隐私政策</h1>
-<p class="meta">生效日期 2026 年 10 月 18 日。版本 1.0。</p>
-<p>Quasar 是个人媒体服务器的客户端，支持你自己运行或拥有账号的 Emby、Jellyfin 和飞牛影视服务器。Quasar 由个人开发者发布。本页说明 App 如何处理你的信息。</p>
-<p>本政策适用于 iOS、iPadOS 和 Android 版 Quasar。Quasar 没有账号体系，也没有开发者运营的内容服务。我们不会收到你的媒体服务器密码，也不做统计和广告。</p>
+<p class="meta">适用于 iOS 和 iPadOS。生效日期 2026 年 10 月 18 日。版本 1.1。</p>
+<p>Quasar 是个人媒体服务器的客户端，支持你自己运行或拥有账号的 Emby、Jellyfin 和飞牛影视服务器。</p>
+<p>本政策适用于 iOS 和 iPadOS 版 Quasar。Android 版单独分发，功能更多。</p>
+<p>Quasar 没有账号体系，也没有开发者运营的内容服务。我们不会收到你的媒体服务器密码，也不做统计和广告。</p>
 
 <h2>保存在设备上的信息</h2>
 <ul>
-<li>媒体服务器地址、用户名和密码。存在 iOS 钥匙串或 Android Keystore 加密存储里，只发送到你填写的服务器地址。</li>
+<li>媒体服务器地址、用户名和密码。存在 iOS 钥匙串里，只发送到你填写的服务器地址。</li>
 <li>随机设备号。首次启动时生成，发给你的媒体服务器用来识别这个客户端。它不是广告标识符，也不会发给我们。</li>
-<li>连接 Trakt 后的登录令牌和用户名。</li>
-<li>你填写的 MDBList API key。</li>
 <li>设置、观看进度、媒体库元数据、海报和播放缓存。</li>
 </ul>
-<p>iOS 上删除 App 后，钥匙串里的条目可能还在。想删掉的话，先在设置里删除服务器，再删除 App。</p>
+<p>iOS 上删除 App 后，钥匙串里的条目可能还在。删除 App 可以清掉本地数据，钥匙串条目的情况见上面的说明。</p>
 
 <h2>联网发送的信息</h2>
 <p>请求从你的设备直接发出，不经过我们的服务器。</p>
 <ul>
 <li>你的媒体服务器。请求包含账号密码、设备号、媒体库查询、播放进度和观看状态。服务器运营方按他们自己的隐私政策处理这些数据。</li>
-<li>TMDB（themoviedb.org）。片名搜索和元数据请求，TMDB 会收到你的 IP 地址。App 使用内置的 API 凭据，你不需要 TMDB 账号。</li>
-<li>Trakt（trakt.tv），只在你连接后。观看记录、评分、片单和 Trakt 用户名。</li>
-<li>豆瓣（douban.com），在打开豆瓣评分或短评时。片名搜索词和公开短评，豆瓣会收到你的 IP 地址。</li>
-<li>MDBList（mdblist.com），只在你填写自己的 key 后。作品 ID 和这个 key。</li>
-<li>TheIntroDB（theintrodb.org）。作品 ID 和季集号，用来补片头片尾标记。</li>
-<li>图片服务器。海报和剧照来自 TMDB 或你的媒体服务器。</li>
-<li>你自己添加的其他服务器地址，包括弹幕源。请求发到你填的地址。</li>
-<li>仅 Android 试用版。启动时联系公共时间服务校验试用期，请求只包含 IP 地址。</li>
+<li>TMDB（themoviedb.org）。片名搜索和元数据，TMDB 会收到你的 IP 地址。App 使用内置的 API 凭据，你不需要 TMDB 账号。</li>
+<li>Trakt（trakt.tv）。发现、日历和详情页用的公开榜单、播出时间、评分和海报。Trakt 会收到你的 IP 地址。这个版本的 iOS App 不登录 Trakt，也不会把你的观看记录发给 Trakt。</li>
+<li>TheIntroDB（theintrodb.org）。作品 ID、季集号和媒体时长，用来补片头片尾标记。</li>
+<li>图片服务器。海报和剧照来自 TMDB、Trakt 的图片服务或你的媒体服务器。</li>
+<li>你自己添加的其他服务器地址。请求发到你填的地址。</li>
 </ul>
 
 <h2>我们不做的事</h2>
@@ -117,17 +106,14 @@
 </ul>
 
 <h2>安全</h2>
-<p>系统会加密保存的账号密码。服务器支持时使用 HTTPS。如果你填的是 http:// 地址，到那台服务器的流量不加密。iOS 版允许明文连接，因为很多家庭服务器没有证书，App 只会连接你填写的地址。iOS 会请求本地网络权限，只用于连接局域网里的服务器。</p>
+<p>iOS 钥匙串会加密保存的账号密码。服务器支持时使用 HTTPS。如果你填的是 http:// 地址，到那台服务器的流量不加密。App 允许明文连接，因为很多家庭服务器没有证书。iOS 会请求本地网络权限，只用于连接局域网里的服务器。</p>
 
 <h2>你的选择</h2>
 <ul>
-<li>在设置里删除服务器，会删掉它的账号密码和缓存。</li>
-<li>断开 Trakt，会删掉设备上的令牌。</li>
-<li>在设置里清空 MDBList key。</li>
-<li>在设置里清除图片和元数据缓存。</li>
-<li>删除 App 可以清掉本地数据。iOS 的钥匙串条目可能保留，见上面的说明。</li>
+<li>删除 App 可以清掉设备上的本地数据。iOS 的钥匙串条目可能保留，见上面的说明。</li>
+<li>这个版本的 iOS App 还没有单独删除服务器或清理缓存的界面。</li>
 </ul>
-<p>TMDB、Trakt、豆瓣、MDBList、TheIntroDB 保存的数据，请找对应的服务。其他问题发邮件给我们。</p>
+<p>TMDB、Trakt、TheIntroDB 保存的数据，请找对应的服务。其他问题发邮件给我们。</p>
 
 <h2>儿童</h2>
 <p>Quasar 不面向 13 岁以下的儿童。13 岁以下请勿使用。</p>
